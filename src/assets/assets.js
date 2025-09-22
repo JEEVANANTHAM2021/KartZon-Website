@@ -58,12 +58,12 @@ import p_img52 from './p_img52.png'
 
 import logo from './logo.png'
 import hero_img from './hero_img.png'
-import cart_icon from './cart_icon.png'
+import cart_icon from './cart_icon.ico'
 import bin_icon from './bin_icon.png'
 import dropdown_icon from './dropdown_icon.png'
-import exchange_icon from './exchange_icon.png'
-import profile_icon from './profile_icon.png'
-import quality_icon from './quality_icon.png'
+import exchange_img from './exchange_img.png'
+import profile_icon from './profile_icon.ico'
+import quality_img from './quality_img.png'
 import search_icon from './search_icon.png'
 import star_dull_icon from './star_dull_icon.png'
 import star_icon from './star_icon.png'
@@ -80,9 +80,9 @@ export const assets = {
     hero_img,
     cart_icon,
     dropdown_icon,
-    exchange_icon,
+    exchange_img,
     profile_icon,
-    quality_icon,
+    quality_img,
     search_icon,
     star_dull_icon,
     star_icon,
