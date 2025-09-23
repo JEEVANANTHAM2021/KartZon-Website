@@ -7,7 +7,7 @@ const NewsLetterBox = () => {
     }
     
     return (
-    <div className='text-center bg-gradient-to-b from-white to-gray-300'>
+    <div className='text-center bg-gradient-to-b from-white to-gray-400 py-5'>
         <p className='text-2xl font-medium text-gray-700'>Subscribe now & get 20%oFF</p>
         <p className='text-gray-700 mt-3'>If you want to be a Subscriber? Then Enter the email to grab the off%</p>
         <form typeof={onSubmitHandler} className='w-full sm:w-1/2 flex items-center gap-3 mx-auto my-6 border pl-3'>
