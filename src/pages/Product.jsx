@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { ShopContext } from '../context/ShopContext';
 import { assets } from '../assets/assets';
+import RelatedProducts from '../components/RelatedProducts';
 
 const Product = () => {
 
@@ -72,6 +73,28 @@ useEffect(()=>{
       </div>
       </div>
     </div>
+    {/* ----------- Description & Review Section---------- */}
+    <div className='mt-20'>
+      <div className='flex'>
+        <b className='text-sm border px-5 py-6'>Description</b>
+        <p className='text-sm border px-5 py-6'>Review</p>
+      </div>
+      <div className='flex flex-col border gap-4 text-sm py-6 px-6 text-gray-600'>
+        <p>Clearly state what the garment is (e.g., a flowy maxi dress) and its purpose or occasion it's suited for all.
+          Detail unique aspects like decorative elements (e.g., hand-stitched embroidery), fabric type (e.g., soft organic cotton), and the fit or silhouette (e.g., a relaxed, comfortable fit). 
+          Employ descriptive adjectives that evoke feelings and experiences (e.g., "luxurious," "effortless," "vibrant") to connect with the customer's desires.  </p>
+        <p>An e-commerce website is a virtual shop offering the convenience of browsing and purchasing fashion items online, 
+          mirroring a physical store's functions but accessible from anywhere, anytime. 
+          An intuitive interface, robust search functionality, and mobile-first design ensure customers can easily find products, leading to a better overall shopping journey</p>
+      </div>
+    </div>
+    {/* ------------ Display Related Products ------------ */}
+
+    <RelatedProducts key={productData.RelatedProducts} />
+
+  
+
+
   </div>
   ): <div className='opacity-0'></div>
 }
