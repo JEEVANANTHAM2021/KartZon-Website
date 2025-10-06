@@ -7,10 +7,10 @@ import RelatedProducts from '../components/RelatedProducts';
 const Product = () => {
 
   const {productId} = useParams();
-  const {products, currency} = useContext(ShopContext);
+  const {products, currency, addToCart} = useContext(ShopContext);
   const[productData, setProductData] = useState(false);
   const [image, setImage] = useState('');
-  const [sizes, setSizes] = useState('');
+  const [size, setSize] = useState('');
 
   const fetchProductData = async () => {
 
@@ -61,11 +61,11 @@ useEffect(()=>{
           <p>Select Sizes</p>
           <div className='flex gap-2'>
             {productData.sizes.map((item,index)=>(
-              <button onClick={()=>setSizes(item)} className={`border bg-white py-3 px-5 ${item === sizes ? 'border-orange-500':''}`} key={index}>{item}</button>
+              <button onClick={()=>setSize(item)} className={`border bg-white py-3 px-5 ${item === size ? 'border-orange-500':''}`} key={index}>{item}</button>
             ))}
           </div>
       </div>
-      <button className='bg-black text-white px-6 py-5 text-sm active:bg-gray-700'>ADD TO CART</button>
+      <button onClick={()=> addToCart(productData._id,size)} className='bg-black text-white px-6 py-5 text-sm active:bg-gray-700'>ADD TO CART</button>
       <div className='flex flex-col gap-2 text-sm text-gray-700 mt-8'>
         <p>100% quality products.</p>
         <p>Easy return & Exchange policy are available within 7days only.</p>
@@ -90,11 +90,8 @@ useEffect(()=>{
     </div>
     {/* ------------ Display Related Products ------------ */}
 
-    <RelatedProducts key={productData.RelatedProducts} />
-
+    <RelatedProducts category={productData.category} subCategory={productData.subCategory} />
   
-
-
   </div>
   ): <div className='opacity-0'></div>
 }

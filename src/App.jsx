@@ -12,12 +12,16 @@ import Login from './pages/Login'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import SearchBar from './components/SearchBar'
+import { ToastContainer, toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 
 const App = () => {
   return (
     <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] bg-gradient-to-r bg-120deg from-gray-300 via-white to-gray-300'>
+     <ToastContainer />
       <Navbar />
       <SearchBar />
       <Routes>
