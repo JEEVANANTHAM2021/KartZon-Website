@@ -16,8 +16,8 @@ const LatestCollection = () => {
     <div className='my-10'>
         <div className='text-center py-8 text-3xl bg-gradient-to-r from-white via-gray-500 to-white'>
             <Title text1={'TRENDY'} text2={'COLLECTIONS'} />
-            <p className='w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni minus reprehenderit sint minima!</p>
+            <p className='w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-800'>
+            Our Trendy-Collections are here, Pick your trendy! Set and Make your day with Trends!</p>
         </div>
         {/* Rendering Products */}
         <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-6 bg-gradient-to-r from-white via-gray-500 to-white '>

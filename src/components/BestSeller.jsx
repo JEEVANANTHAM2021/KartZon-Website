@@ -17,8 +17,8 @@ const BestSeller = () => {
     <div className='my-10'>
         <div className='text-center text-3xl py-8 bg-gradient-to-r from-white via-gray-500 to-white'>
             <Title text1={'BEST'} text2={'SELLERS'} />
-            <p className='w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600'>
-            Lorem ipsum dolor sit amet consecteautem saepe sint odit voluptas.</p>
+            <p className='w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-800'>
+            Our BestSellers are Stylish Sets. Buy this and Wear it - Looks like a Model!</p>
         </div>
         {/* Rendering the BestSeller */}
          <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-6 bg-gradient-to-r from-white via-gray-500 to-white '>

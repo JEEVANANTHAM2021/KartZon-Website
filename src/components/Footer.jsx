@@ -7,8 +7,9 @@ const Footer = () => {
         <div className='flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 my-10 mt-12 pl-2 text-sm bg-gradient-to-t from-white to-gray-400'>
         <div>
           <img className='w-32 mb-3' src={assets.logo} alt='' />
-          <p className='w-full md:w-2/4 text-gray-700'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deserunt,
-             eos nostrum velit vero vel nihil debitis commodi id provident quae minima, laudantium voluptate quis! Culpa!</p>
+          <p className='w-full md:w-2/4 text-gray-700'><b className='text-yellow-500'>KartZon</b> – Where fashion meets confidence.
+Trendy looks, premium quality, and effortless style — all in one place.
+Your vibe. Your style. Your <b className='text-amber-900'> KartZon.</b> ✨</p>
         </div>
 
         <div className='w-1/2 sm:w-2/3'>
@@ -32,7 +33,7 @@ const Footer = () => {
 
       <div>
           <hr />
-          <p className='py-6 text-sm text-center'>Copyrights @2025 kartzon.com & All rights are Reserved </p>
+          <p className='py-6 text-sm text-center'>Copyrights @2025 <b className='text-teal-500'>kartzon.com</b>  & All rights are Reserved </p>
       </div>
 
     </div>
