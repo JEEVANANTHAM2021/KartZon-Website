@@ -35,7 +35,7 @@ const About = () => {
           <Title text1={'WHY'} text2={'CHOOSE US'}/>
         </div>
 
-    <div className='flex flex-col md:flex-row text-sm mb-20 bg-gradient-to-r from-gray-300 via-white to-gray-300'>
+    <div className='flex flex-col md:flex-row text-sm mb-20'>
           <div className='border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5' >
           <b className='text-2xl text-amber-900'>Quality Assurance:</b>
           <p className='text-gray-600'>We are committed to delivering only the best to our customers. 

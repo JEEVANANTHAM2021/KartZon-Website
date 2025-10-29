@@ -14,13 +14,15 @@ import Footer from './components/Footer'
 import SearchBar from './components/SearchBar'
 import { ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import AnimatedBackground from './components/Animatedbackground'
 
 
 
 
 const App = () => {
   return (
-    <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] bg-gradient-to-r bg-120deg from-gray-300 via-white to-gray-300'>
+    <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
+    <AnimatedBackground />
      <ToastContainer />
       <Navbar />
       <SearchBar />

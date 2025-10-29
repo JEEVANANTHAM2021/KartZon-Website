@@ -25,3 +25,65 @@ a.active hr{
     color: gray;
   }
 }
+
+/* 3D Perspective */
+.perspective {
+  perspective: 1000px;
+}
+
+.cube-container{
+  width: 100vmax;
+  height: 100vmax;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(6, 2fr);
+  gap: 20px;
+}
+
+.cube {
+  width: 60vmax;
+  height: 60vmax;
+  background: linear-gradient(135deg, #ff3cac, #562b7c, #2b86c5);
+  border-radius: 20px;
+  transform-style: preserve-3d;
+  animation: float 8s ease-in-out infinite;
+  opacity: 0.6;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
+}
+
+.cube:nth-child(odd){
+  animation-delay: 0.3s;
+}
+
+.cube:nth-child(even){
+  animation-delay: 0.3s;
+}
+
+
+/*Floating 3D Animation*/
+@keyframes float {
+  0%{
+    transform: rotateX(0deg) rotateY(0deg) translateZ(0px);
+  }
+  50%{
+    transform: rotateX(40deg) rotateY(20deg) translateZ(50px);
+  }
+  100%{
+    transform: rotateX(0deg) rotateY(0deg) translateZ(0px);
+  }
+}
+
+/*Slow 3D Rotation of entire container*/
+@keyframes rotateContainer {
+  0% {transform: translate(-50%, -50%) rotateX(0deg) rotateY(0deg);}
+  100% {transform: translate(-50%, -50%) rotateX(360deg) rotateY(360deg);}
+  
+}
+
+.animate-rotate {
+  animation: rotateContainer 40s linear infinite;
+}
