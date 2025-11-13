@@ -56,7 +56,7 @@ import p_img51 from './p_img51.png'
 import p_img52 from './p_img52.png'
 
 
-import logo from './logo.png'
+import logo from './logo3.png'
 import hero_img from './hero_img.png'
 import cart_icon from './cart_icon.ico'
 import bin_icon from './bin_icon.png'
