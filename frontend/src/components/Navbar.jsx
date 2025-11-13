@@ -50,11 +50,11 @@ const Navbar = () => {
              <p className='absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[-8px]'>{getCartCount()}</p>
              </Link>
 
-             <img onClick={() =>setVisible(true)} src={assets.menu_icon} className='w-5 cursor-pointe sm:hidden'/>
+             <img onClick={() =>setVisible(true)} src={assets.menu_icon} className='w-5 cursor-pointer sm:hidden'/>
         
         </div>
         {/*Sidebar menu for small screens*/}
-        <div className={`absolute top-0 bottom-0 overflow-hidden bg-white transistion-all ${visible ? 'w-full' : 'w-0'}`}>
+        <div className={`absolute top-0 origin-top-right overflow-hidden bg-white/90 transition-transform ${visible ? 'w-50' : 'w-0'}`}>
             <div className='flex flex-col text-gray-600'>
                 <div onClick={() =>setVisible(false)} className='flex items-center gap-4 p-3 cursor-pointer'>
                     <img src={assets.dropdown_icon} className='h-4 rotate-180' alt=''/>
