@@ -41,10 +41,10 @@ const List = ({token}) => {
     },[])
   return (
     <div>
-        <p className='mb-2'>All Products List</p>
+        <p className='mb-2 font-bold text-2xl'>All Products List</p>
         <div className='flex flex-col gap-2'>
           {/* List Table Title */}
-          <div className='hidden md:grid grid-cols-[1fr_3fr_1fr_1fr_1fr] items-center py-1 px-2 border bg-gray-200 text-sm'>
+          <div className='hidden md:grid grid-cols-[1fr_3fr_1fr_1fr_1fr] items-center py-1 px-2 border bg-transparent text-sm'>
             <b>Image</b>
             <b>Name</b>
             <b>Price</b>
