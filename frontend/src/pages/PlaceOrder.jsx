@@ -8,7 +8,7 @@ import { toast } from 'react-toastify'
 
 const PlaceOrder = () => {
 
-      const [method, setMethod] = useState('cod');
+      const [method, setMethod] = useState('stripe');
       const {navigate, backendUrl, token, cartItems, setCartItems, getCartAmount, delivery_fee, products} = useContext(ShopContext);
       const [formData, setFormData] = useState({
         firstName:'',
@@ -63,6 +63,18 @@ const PlaceOrder = () => {
                   } else {
                     toast.error(response.data.message)
                   }
+            break;
+
+            case 'stripe' :
+                  const responseStripe = await axios.post(backendUrl + '/api/order/stripe',orderData, {headers:{token}})
+                  if (responseStripe.data.success){
+                    const {session_url} = responseStripe.data
+                    window.location.replace(session_url)
+                  } else{
+                    toast.error(responseStripe.data.message)
+                  }
+
+
             break;
 
             default:
